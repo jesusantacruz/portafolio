@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de textos Challenge Alura</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/encryptor.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <div class="brand-logo">
+          <img src="images/alura.png" alt="Logo" />
+        </div>
+        <h3>Encriptador de textos</h3>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="section">
+        <textarea
+          id="input-text"
+          placeholder="Introduce el texto a procesar"
+        ></textarea>
+        <p>Solo introduce minusculas y vocales sin acentos.</p>
+        <input type="button" class="button" id="encrypt" value="Encriptar" />
+        <input type="button" class="button" id="decrypt" value="Desencriptar" />
+      </div>
+      <div class="section">
+        <textarea id="output-text" placeholder="Resultado"></textarea>
+        <input
+          type="button"
+          class="button button-copy"
+          id="copy"
+          value="Copiar al portapapeles"
+        />
+      </div>
+    </div>
+  </body>
+</html>
